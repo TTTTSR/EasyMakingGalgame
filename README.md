@@ -1,2 +1,4 @@
 # EasyMakingGalgame
 无需代码，轻松制作galgame
+仅使用包下载EasyMakingGalGame.unitypackage导入unity editor并使用其中搭建好的场景
+源代码下载Scripts文件夹
