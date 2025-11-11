@@ -6,7 +6,7 @@ public class Charactors : MonoBehaviour
 {
     public void Sort()
     {
-        float Width=2.5f;
+        float Width=6f;
 
         for(int i=0;i<transform.childCount;i++)
         {
@@ -15,9 +15,9 @@ public class Charactors : MonoBehaviour
     }
     public CharactorBehavior AddCharactor(GameObject chara)
     {
-        GameObject instance =  Instantiate(chara,transform);
+        chara.transform.parent = transform;
         Sort();
-        return instance.GetComponent<CharactorBehavior>();
+        return chara.GetComponent<CharactorBehavior>();
     }
     public void RemoveCharactor(CharactorBehavior charactorBehavior)
     {
